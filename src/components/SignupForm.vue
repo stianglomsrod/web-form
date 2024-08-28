@@ -43,7 +43,7 @@ export default {
   },
   methods: {
     addSkill(e) {
-      if (e.key === "," && this.tempSkill) {
+      if (e.key === "," && this.tempSkill && this.tempSkill != "") {
         if (!this.skills.includes(this.tempSkill)) {
           this.skills.push(this.tempSkill.slice(0, -1));
         }
